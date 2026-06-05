@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projets – FRAIOUI Moumen</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ── PAGE PROJETS ── */
+    .projets-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 32px 48px;
+      background-color: rgb(168, 167, 167);
+      margin: 0 16px 16px;
+      border-radius: 10px;
+    }
+    .projets-header h1 {
+      font-size: 40px;
+      font-weight: 700;
+    }
+    .projets-header a.retour {
+      font-size: 14px;
+      font-weight: 500;
+      color: #1a1a1a;
+      background-color: rgb(112, 111, 111);
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.2s;
+    }
+    .projets-header a.retour:hover {
+      background-color: rgb(70, 70, 70);
+      color: #fff;
+    }
+
+    .projets-liste {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 0 16px 32px;
+    }
+
+    .projet-detail {
+      background-color: rgb(168, 167, 167);
+      border: 1.5px solid #555;
+      border-radius: 10px;
+      padding: 28px 32px;
+      scroll-margin-top: 80px; /* offset pour les ancres nav */
+    }
+
+    .projet-detail .projet-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background-color: rgb(112, 111, 111);
+      color: #fff;
+      padding: 3px 10px;
+      border-radius: 4px;
+      margin-bottom: 12px;
+    }
+
+    .projet-detail h2 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .projet-detail p {
+      font-size: 14px;
+      color: #3a3a3a;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+
+    .projet-detail .technologies {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .projet-detail .tech-badge {
+      font-size: 12px;
+      font-weight: 500;
+      background-color: #777;
+      color: #f0f0f0;
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+
+    .projet-detail .projet-lien {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 600;
+      color: #1a1a1a;
+      text-decoration: underline;
+      transition: color 0.2s;
+    }
+    .projet-detail .projet-lien:hover {
+      color: #000;
+    }
+
+    .projets-liste {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 0 16px 32px;
+}
+article:target {
+  box-shadow: 0 0 0 3px #222;
+  border-color: #222;
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <ul>
+      <li><a href="index.html#competences">Compétences</a></li>
+      <li><a href="projets.html">Projets</a></li>
+      <li><a href="index.html#contacts">Contacts</a></li>
+    </ul>
+  </nav>
+
+  <header class="projets-header">
+    <h1>Mes Projets</h1>
+    <a href="index.html" class="retour">Retour à l'accueil</a>
+  </header>
+
+  <main class="projets-liste">
+
+    <!-- PROJET 1 -->
+    <article id="chatbot" class="projet-detail">
+      
+      <h2>Chatbot</h2>
+      <p>
+        Assistant conversationnel développé en Java dans le cadre d'un projet en duo. 
+        Le programme analyse les entrées de l'utilisateur et génère des réponses adaptées 
+        en fonction de règles prédéfinies. Ce projet m'a permis de pratiquer la programmation 
+        orientée objet et la gestion des chaînes de caractères.
+      </p>
+      <div class="technologies">
+        <span class="tech-badge">Java</span>
+        <span class="tech-badge">POO</span>
+      </div>
+      <!-- <a href="#" class="projet-lien">Voir le dépôt GitLab →</a> -->
+    </article>
+
+    <!-- PROJET 2 -->
+    <article id="accenture" class="projet-detail">
+      
+      <h2>Site vitrine Accenture</h2>
+      <p>
+        Reproduction fidèle d'un site vitrine inspiré d'Accenture destiné a des élèves de 
+        troisième à la recherche d'un stage, réalisée uniquement en HTML et CSS. 
+        Ce projet m'a permis de travailler la mise en page avec Flexbox, la gestion des codes couleurs d'un site et le respect d'une charte graphique existante.
+      </p>
+      <div class="technologies">
+        <span class="tech-badge">HTML</span>
+        <span class="tech-badge">CSS</span>
+        
+      </div>
+      <!-- <a href="#" class="projet-lien">Voir le projet →</a> -->
+    </article>
+
+    <!-- PROJET 3 -->
+    <article id="jdr" class="projet-detail">
+      
+      <h2>Site de vente de jeux de rôles</h2>
+      <p>
+        Site commandé par des camarades, dédié à la vente  de jeux de rôles. 
+        Echanges par mails en anglais pour des demandes sur le site en question,
+        Réunions entre clients et développeurs pour suivre l'avancé du projet
+      </p>
+      <div class="technologies">
+        <span class="tech-badge">HTML</span>
+        <span class="tech-badge">CSS</span>
+        <span class="tech-badge">Anglais</span>
+      </div>
+      <!-- <a href="#" class="projet-lien">Voir le projet →</a> -->
+    </article>
+
+  </main>
+</body>
+</html>
